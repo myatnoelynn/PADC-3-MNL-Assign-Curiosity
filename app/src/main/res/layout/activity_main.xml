@@ -20,19 +20,80 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    </RelativeLayout>
+      <RelativeLayout
+          android:id="@+id/rl_id"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          android:background="@color/secondary_text">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+            <ImageView
+                android:id="@+id/img_curiosity"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginRight="130dp"
+                android:src="@mipmap/curiositylogo"/>
+
+              <ImageView
+              android:id="@+id/img_sign_in_fb"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="80dp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="50dp"
+              android:src="@mipmap/signinfb"
+              android:layout_below="@id/img_curiosity"/>
+
+             <ImageView
+              android:id="@+id/img_sign_in_google"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="50dp"
+              android:src="@mipmap/signingoogle"
+              android:layout_below="@id/img_sign_in_fb"/>
+
+            <ImageView
+              android:id="@+id/img_sign_in_twitter"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="50dp"
+              android:layout_marginRight="50dp"
+              android:src="@mipmap/signintwitter"
+              android:layout_below="@id/img_sign_in_google"/>
+
+              <ImageView
+                  android:id="@+id/img_sign_up_email"
+                  android:layout_width="140dp"
+                  android:layout_height="wrap_content"
+                  android:src="@mipmap/signupemail"
+                  android:layout_alignLeft="@id/img_sign_in_twitter"
+                  android:layout_below="@id/img_sign_in_twitter"/>
+
+
+             <ImageView
+              android:id="@+id/img_sign_up_email1"
+              android:layout_width="140dp"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/signupemail"
+              android:layout_alignRight="@id/img_sign_in_twitter"
+              android:layout_below="@id/img_sign_in_twitter"/>
+
+
+            <TextView
+                android:id="@+id/tv_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions and Privacy Policy"
+                android:textColor="@color/icons"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"/>
+
+      </RelativeLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
